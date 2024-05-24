@@ -123,4 +123,7 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'cryptocurrencies_api_url' => env('NEXT_PUBLIC_CRYPTOCURRENCIES_API_URL', 'https://pro-api.coinmarketcap.com/v1'),
+    'coinmarketcap_api_key' => env('NEXT_PUBLIC_X_CMC_PRO_API_KEY', '28912309-b0bd-465d-8006-a26af1eafb04'),
+
 ];
