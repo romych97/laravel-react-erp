@@ -1,5 +1,5 @@
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-import Table from "@/components/Tables/Table";
+import CryptocurrenciesTable from "@/components/Tables/CryptocurrenciesTable";
 
 import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
@@ -15,7 +15,7 @@ const TablesPage = () => {
       <Breadcrumb pageName="Tables" />
 
       <div className="flex flex-col gap-10">
-        <Table />
+        <CryptocurrenciesTable />
       </div>
     </DefaultLayout>
   );

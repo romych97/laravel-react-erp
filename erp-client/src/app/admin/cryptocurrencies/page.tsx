@@ -3,7 +3,6 @@
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import React from "react";
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-import ChartOne from "@/components/Charts/ChartOne";
 import { getCryptocurrencies } from "@/services/cryptocurrencies/cryptocurrencies";
 import CryptocurrenciesTable from "@/components/Tables/CryptocurrenciesTable";
 
