@@ -4,7 +4,8 @@ import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import React from "react";
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 import SitesTable from "@/components/Tables/SitesTable";
-import CreateStoreModal from "@/components/Modals/CreateStoreModal";
+// import CreateStoreModal from "@/components/Modals/CreateStoreModal";
+
 const BasicSites: React.FC = () => {
 
     const [createStoreModal, showCreateStoreModal] = React.useState(false);
@@ -22,9 +23,9 @@ const BasicSites: React.FC = () => {
                     </button>
                 </div>
                 {data.length ? <SitesTable data={data} /> : null}
-                {createStoreModal && <CreateStoreModal 
+                {/* {createStoreModal && <CreateStoreModal 
                     showCreateStoreModal={showCreateStoreModal} 
-                />}
+                />} */}
             </>
         </DefaultLayout>
     );

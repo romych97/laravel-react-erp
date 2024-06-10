@@ -5,7 +5,7 @@ import React from "react";
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 import CategoriesTable from "@/components/Tables/CategoriesTable";
 import { createCategoryService, getCategoriesService } from "@/services/categories/categories";
-import Modal from "@/app/admin/ui/modals/Modal";
+import Modal from "@/ui/modals/Modal";
 
 const BasicCategories: React.FC = () => {
 
