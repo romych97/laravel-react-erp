@@ -3,7 +3,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
-    './src/**/*.{js,jsx,ts,tsx}',  // Adjust the paths to match your project structure
+    './src/**/*.{js,jsx,ts,tsx}',
     './public/index.html',
   ],
   darkMode: "class",
