@@ -3,18 +3,28 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/**/*.{js,jsx,ts,tsx}',  // Adjust the paths to match your project structure
+    './public/index.html',
   ],
   darkMode: "class",
   theme: {
+    container: {
+      center: true,
+      padding: '1rem',
+      screens: {
+        sm: '100%',
+        md: '100%',
+        lg: '100%',
+        xl: '1240px',
+        '2xl': '1496px',
+      },
+    },
     fontFamily: {
       satoshi: ["Satoshi", "sans-serif"],
     },
     screens: {
       "2xsm": "375px",
-      xsm: "425px",
+      "xsm": "425px",
       "3xl": "2000px",
       ...defaultTheme.screens,
     },
