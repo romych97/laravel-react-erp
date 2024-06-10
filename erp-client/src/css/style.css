@@ -3,7 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+    .autocomplete {
+      position: relative;
+      display: inline-block;
+    }
 @layer base {
     body {
         @apply relative z-1 bg-whiten font-satoshi text-base font-normal text-body;
@@ -34,6 +37,17 @@
 }
 
 /* third-party libraries CSS */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #1a222c inset !important;
+    background-color: #1a222c !important;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+}
 
 .tableCheckbox:checked ~ div span {
     @apply opacity-100;
@@ -241,3 +255,13 @@ input[type="search"]::-webkit-search-cancel-button {
 [x-cloak] {
     display: none !important;
 }
+
+.triangle::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0em;
+    border: 1em solid transparent;
+    border-left-color: #ffffff;
+  }
