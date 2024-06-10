@@ -1,17 +1,23 @@
-import ECommerce from "@/components/Dashboard/E-commerce";
-import { Metadata } from "next";
-import DefaultLayout from "@/components/Layouts/DefaultLayout";
+"use client";
 
-export const metadata: Metadata = {
-  title:
-    "Next.js E-commerce Dashboard | TailAdmin - Next.js Dashboard Template",
-  description: "This is Next.js Home for TailAdmin Dashboard Template",
-};
+import Layout from '@/components/Layouts/Layout'; 
+import SEO from '@/components/Seo/SEO';
+import '@/css/globals.css';
+import { AppProps } from 'next/app';
+import { FC } from 'react';
+import CatalogPage from './catalog/page';
 
-export default function Home() {
+const App: FC<AppProps> = ({ Component, pageProps }) => {
+  console.log("file: page.tsx:10 - App - Component:", Component);
   return (
-    <>
-      site
-    </>
+    <Layout>
+      <SEO 
+        title={process.env.siteTitle}
+      />
+      {/* <Component {...pageProps} /> */}
+      <CatalogPage />
+    </Layout>
   );
 }
+
+export default App;
